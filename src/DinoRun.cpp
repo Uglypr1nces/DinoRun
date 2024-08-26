@@ -5,6 +5,20 @@
 const int SCREEN_WIDTH = 800;
 const int SCREEN_HEIGHT = 600;
 
+//player dimensions
+int PLAYER_WIDTH = 80;
+int PLAYER_HEIGHT = 60;
+
+//colors
+struct Color {
+    Uint8 red;
+    Uint8 green;
+    Uint8 blue;
+};
+
+const Color BLACK = {0, 0, 0};
+const Color WHITE = {255, 255, 255};
+const Color RED = {255, 0, 0};
 
 //main function
 int main(int argc, char* args[]){
@@ -15,7 +29,7 @@ int main(int argc, char* args[]){
     }
 
 // Create a window
-    SDL_Window* window = SDL_CreateWindow("My First Game",
+    SDL_Window* window = SDL_CreateWindow("DinoRun",
                                           SDL_WINDOWPOS_UNDEFINED,
                                           SDL_WINDOWPOS_UNDEFINED,
                                           SCREEN_WIDTH,
@@ -51,8 +65,8 @@ int main(int argc, char* args[]){
         SDL_RenderClear(renderer);
 
         // Draw here (e.g., a rectangle)
-        SDL_SetRenderDrawColor(renderer, 0xFF, 0x00, 0x00, 0xFF);
-        SDL_Rect fillRect = {SCREEN_WIDTH / 4, SCREEN_HEIGHT / 4, SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2};
+        SDL_SetRenderDrawColor(renderer, WHITE.red, WHITE.green, WHITE.blue, 0xFF);
+        SDL_Rect fillRect = {SCREEN_WIDTH / 2 - PLAYER_WIDTH / 2, SCREEN_HEIGHT / 2 - PLAYER_HEIGHT / 2, PLAYER_WIDTH, PLAYER_HEIGHT};
         SDL_RenderFillRect(renderer, &fillRect);
 
         // Update the screen
