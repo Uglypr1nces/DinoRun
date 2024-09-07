@@ -9,16 +9,6 @@ const int SCREEN_HEIGHT = 600;
 int PLAYER_WIDTH = 80;
 int PLAYER_HEIGHT = 60;
 
-//colors
-struct Color {
-    Uint8 red;
-    Uint8 green;
-    Uint8 blue;
-};
-
-const Color BLACK = {0, 0, 0};
-const Color WHITE = {255, 255, 255};
-const Color RED = {255, 0, 0};
 
 //main function
 int main(int argc, char* args[]){
@@ -58,6 +48,18 @@ int main(int argc, char* args[]){
             if (e.type == SDL_QUIT) {
                 quit = true;
             }
+            switch( event.type ){
+                case SDL_KEYDOWN:
+                    printf( "Key press detected\n" );
+                    break;
+
+                case SDL_KEYUP:
+                    printf( "Key release detected\n" );
+                    break;
+
+                default:
+                    break;
+    }       
         }
 
         // Clear the screen
@@ -80,3 +82,27 @@ int main(int argc, char* args[]){
 
     return 0;
 }
+
+
+class Object {      
+  public:      
+    int width;
+    int height;
+
+    int x;
+    int y;
+
+
+    Color(Uint8 r, Uint8 g, Uint8 b, Uint8 a = 255) : red(r), green(g), blue(b), alpha(a) {}
+
+
+    void drawObject(SDL_Renderer* renderer){
+        const SDL_SetRenderDrawColor(renderer, red, green, blue, alpha);
+    }
+
+    void moveObject(){
+
+    }
+    private:
+        int8 red, green, blue, alpha;
+};
