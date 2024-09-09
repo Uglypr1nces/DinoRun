@@ -23,12 +23,13 @@ To run the game, you'll need:
 You can install SDL2 using your package manager:
 ```bash
 sudo apt-get install libsdl2-dev
-
+```
 
 #### On MacOS
 Install SDL2 using Homebrew:
 ```bash
 brew install sdl2
+```
 
 #### On Windows
 Install SDL2 using Homebrew:
@@ -41,18 +42,21 @@ Download the SDL2 development libraries from the official website and follow the
 ```bash
 git clone https://github.com/yourusername/DinoRun.git
 cd DinoRun
+```
 
 2. Compile the game: Linux/MacOS:
 ```bash
 g++ -o DinoRun main.cpp -lSDL2
+```
 
 Compile the game on Windows
 2. Compile the game: Linux/MacOS:
 ```bash
 g++ -o DinoRun.exe main.cpp -lmingw32 -lSDL2main -lSDL2
+```
 
 3. Run the game
 
 ```bash
 ./DinoRun
-
+```
