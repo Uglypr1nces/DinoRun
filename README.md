@@ -40,7 +40,7 @@ Download the SDL2 development libraries from the official website and follow the
  1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/DinoRun.git
+git clone https://github.com/Uglypr1nces/DinoRun.git
 cd DinoRun
 ```
 

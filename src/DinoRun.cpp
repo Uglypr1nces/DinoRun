@@ -11,7 +11,7 @@ int PLAYER_WIDTH = 80;
 int PLAYER_HEIGHT = 60;
 
 bool isJumping = false;
-int jumpVelocity = -35;
+int jumpVelocity = -20;
 int gravity = 1;
 int groundY = SCREEN_HEIGHT - PLAYER_HEIGHT;
 
@@ -90,7 +90,7 @@ int main(int argc, char* args[]) {
 
             if (e.type == SDL_KEYDOWN && e.key.keysym.sym == SDLK_SPACE && !isJumping) {
                 isJumping = true;
-                jumpVelocity = -35;  // Reset jump velocity when the jump starts
+                jumpVelocity = -20;  
             }
         }
 
