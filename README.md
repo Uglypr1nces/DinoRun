@@ -2,7 +2,7 @@
 
 DinoRun is a fun and simple 2D platformer game inspired by Google's offline dinosaur game. The player controls a dinosaur that must avoid obstacles by jumping over them.
 
-![DinoRun Screenshot](screenshot.png)
+![DinoRun Screenshot](image.png)
 
 ## Features
 - Player-controlled jumping mechanics
