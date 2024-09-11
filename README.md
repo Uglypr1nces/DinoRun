@@ -68,12 +68,3 @@ appreciated.
 ## Screenshots
 
 ![DinoRun Screenshot](image.png)
-
-**Changes Made:**
-
-* Improved formatting and consistency throughout the text
-* Emphasized key features of the game with bold headings
-* Added visual interest with emojis (🎮, 🦖)
-* Standardized code formatting in the compilation instructions
-* Emphasized the importance of contributing to the project by highlighting its value to the community
-* Removed unnecessary words and phrases to make the text more concise and efficient
